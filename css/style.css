@@ -1,8 +1,8 @@
-*;
-*::before
+*,
+*::before,
 *::after{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -10,73 +10,82 @@ body{
     background-color: #BC7FCD;
 }
 
-div{
-  width: 1270px;
-  background-color: purple;
-  display: grid;
-  grid-template-columns: repeat(15,65px);
-  gap: 20px;
-  padding: 10px;
-  margin: auto;
+.keyboard{
+    background-color: purple;
+    width: 1290px;
+    height: auto;
+    padding: 15px;
+    margin: auto;
+    position: relative;
 }
 
-button{
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 15px;
+input[type=text]{
+    width: 100%;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.CapsLk{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.Backspace{
-    grid-column: span 2;
-}
-
-.shift{
-    grid-column: span 2;
-}
-
-.Enter{
-    grid-column: span 2;
-}
-
-.Space{
-    grid-column: span 5;
-}
-
-.Delete{
-    grid-column: span 2;
-}
-
-.arrow1{
-    padding: 5px 26px;
-    position: absolute;
-    left: 1240px;
-    top: 322px;
-}
-
-.arrow2{
-    padding: 5px 26px;
-    position: absolute;
-    left: 1240px;
-    top: 353px;
-}
-
-.arrow4{
-    grid-column-start: 15;
-    grid-column-end: 16 ;
-}
-
-.Top{
+input[type=button]{
+    margin-top: 20px;
+    width: 80px;
     padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
 }
 
-button:hover{
+input[type=button]:hover{
     border: 4px solid #BC7FCD;
     transition: border 1s;
 }
 
+input[class=med]{
+    margin-top: 20px;
+    width: 80px;
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input[class=lg]{
+    margin-top: 20px;
+    width: 160px;
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input[class=xl]{
+    margin-top: 20px;
+    width: 410px;
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input[class=arw1]{
+    position: absolute;
+    width: 80px;
+    padding: 1px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input[class=arw2]{
+    position: absolute;
+    top: 452px;
+    width: 80px;
+    padding: 1px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input[class=arw3]{
+    margin-top: 20px;
+    width: 80px;
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 85px;
+}
 
